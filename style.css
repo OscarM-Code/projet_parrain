@@ -195,6 +195,7 @@ body > section:nth-child(3) section section
     margin-top: 45px;
 }
 
+
 body > section:nth-child(3) h3
 {
     margin: 1rem 0 1.5rem 0;
@@ -216,6 +217,7 @@ body > section:nth-child(4) img
 {
     margin-top: 2rem;
     width: 100%;
+    border-radius: 25px;
 }
 
 /* --------SECTION EXPERIENCE-------- */
@@ -432,6 +434,7 @@ body > section:nth-child(9) fieldset textarea
     color: #ffffff;
     font-family: "Barlow";
     padding: 0 2%;
+    resize: none;
 }
 
 body > section:nth-child(9) fieldset legend
@@ -944,18 +947,20 @@ body > section:nth-child(9) fieldset legend
     body > section:nth-child(9) section
     {
         grid-area: 3/2/5/3;
-        width: 60%;
+        width: 45%;
         margin: 0;
     }
 
     body > section:nth-child(9) section + section
     {
         grid-area: 5/2/6/3;
+        width: 60%;
     }
 
     body > section:nth-child(9) section + section + section
     {
         grid-area: 6/2/7/3;
+        width: 60%;
     }
 
     body > section:nth-child(9) h3
@@ -980,7 +985,11 @@ body > section:nth-child(9) fieldset legend
     {
         width: 37.5%;
         margin: 0;
-        height: 3rem;
+    }
+
+    body > section:nth-child(9) fieldset:nth-child(-1n+2) input
+    {
+        height: 2.5rem;
     }
 
     body > section:nth-child(9) form fieldset:nth-child(3)
